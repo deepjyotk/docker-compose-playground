@@ -1,0 +1,12 @@
+version: '3.0'
+services:
+  web-app:
+    image: ubuntu
+    command: "env"
+    env_file:
+      - app.env
+    environment:
+    - app.name=product-service
+    - app.version=google.com
+    - input=56
+    
